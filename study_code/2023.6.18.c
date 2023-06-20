@@ -39,15 +39,58 @@
 
 
 //写出1-100之间的奇数
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 1;
+//	while (i <= 100)
+//	{
+//		if (i % 2 != 0)
+//			printf("%d ",i);
+//		i++;
+//	}
+//	return 0;
+//}
+
+//读取输出数字
+//#include<stdio.h>
+//int main()
+//{
+//	int ch = 0;
+//	while ((ch = getchar()) != EOF)
+//	{
+//		if (ch < '0' || ch > '9')
+//			continue;
+//		putchar(ch);
+//	}
+//	return 0;
+//}
+
+
+//用for循环输出1-10
+//#include<stdio.h>
+//int main()
+//{
+//	int i = 0;
+//	for (i = 1; i <= 10; i++)
+//	{
+//		printf("%d ",i);
+//	}
+//	return 0;
+//}
+
+//计算n的阶乘
 #include<stdio.h>
 int main()
 {
-	int i = 1;
-	while (i <= 100)
+	int i = 0;
+	int n = 0;
+	int ret = 1;
+	scanf_s("%d",&n);
+	for (i = 1; i <= n; i++)
 	{
-		if (i % 2 != 0)
-			printf("%d ",i);
-		i++;
+		ret = ret * i;
 	}
+	printf("n! = %d\n",ret);
 	return 0;
 }
